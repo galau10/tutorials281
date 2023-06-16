@@ -2,7 +2,7 @@
 Learnr tutorials for UNC's Poli 281 Class
 
 ## Installation and Running Tutorials
-Running these tutorials locally requires installing and loading the `learnr` package, with the following lines of code.
+Running these tutorials locally requires installing and loading the `learnr` package, with the following lines of code:
 
 ```{r}
 install.packages("learnr")

@@ -51,7 +51,7 @@ Beyond addition, we can also work with other operators. Here is a list:
   
 * Addition `+`
 * Subtraction `-`
-* Multiplication `*`
+* Multiplication `*` (an asterisk)
 * Division `/`
 * Exponents `^` (where 4 to the second power would be `4^2`)
 
