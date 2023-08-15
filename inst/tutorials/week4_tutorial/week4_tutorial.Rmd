@@ -145,7 +145,7 @@ As you can see, `party.factor` has two levels: Democrat and Republican. We can a
 str(party.factor) # inspect the structure of the factor
 ```
 
-The output shows that R recognizes party.factor as a factor with two levels: Democrat (assigned a 2) and Republican (assigned a 1). Sometimes we may want to change the order of the levels in a factor. For example, let's make Republican the first level and Democrat the second:
+The output shows that R recognizes `party.factor` as a factor with two levels: Democrat (assigned a 2) and Republican (assigned a 1). Sometimes we may want to change the order of the levels in a factor. For example, let's make Republican the first level and Democrat the second:
 
 ```{r eval = T}
 party.factor2 <- factor(party, levels = c("Republican", "Democrat")) # specify the levels

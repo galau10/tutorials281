@@ -140,43 +140,65 @@ Rx4 has 21 miles per gallon, while the Datsun 710 has 22.8</p>
 <div id="section-topic-1-how-computers-store-files"
 class="section level2">
 <h2>Topic 1: How Computers Store Files</h2>
-<p>To fully harness the power of R for data analysis and manipulation,
-it’s important to understand how computers store files and how R
-interacts with them. Armed with this knowledge, you will be able to
-seamlessly load data sets, analyze them, and save the results!</p>
+<p>So far, you’ve been working with built-in dataframes that we give
+you. But soon you’ll start importing and using more complicated
+dataframes in R. This will be a lot easier if you know a little about
+how your computer stores files and the idea of a “file path. This lesson
+provides an overview of that information.</p>
 <div id="section-the-basics" class="section level3">
 <h3>The Basics</h3>
-<p>Let’s start with the basics. Your computer’s storage system is
-organized into <em>folders</em>, which can contain additional folders
-and <em>files</em>. These files consist of collections of data, such as
-text, pictures, videos, and more. Each file has a unique location on
-your hard drive, which we can access using something called a
-<em>path</em>. A file path is the address that specifies the location of
-a file on your computer’s storage system. It’s like giving directions to
-R on where to find the data you want to work with!</p>
-<p>Suppose we have the file data.csv located in a folder called
-“Documents.” Let’s look at how the file paths would appear on both
+<p>Let’s start with the basics. Your computer has a <em>hard drive</em>
+where it stores files. To make things easier, this hard drive is
+organized into <em>folders</em>, which can then hold contain additional
+folders and <em>files</em>. These files consist of collections of data,
+such as text, pictures, videos, and more.</p>
+<p>Every file on your computer has an address: this is the folder you
+would need to open to find the file, plus the name of the file itself.
+For example, you might store all your UNC files in a folder called
+“College. Inside that, you might have a folder called”Fall 2023
+classes”, and inside that, you might have a folder called “POLI 281”,
+and inside that, you might have a file called “congressdata.csv”. We can
+think of this information as defining a unique path to that file. It’s
+like giving R directions on where to find the data you want to work
+with!</p>
+<p>Every file on your computer has an address: this is the folder you
+would need to open to find the file, plus the name of the file itself.
+For example, you might store all your UNC files in a folder called
+“College. Inside that, you might have a folder called”Fall 2023
+classes”, and inside that, you might have a folder called “POLI 281”,
+and inside that, you might have a file called “congressdata.csv”. We can
+think of this information as defining a unique path to that file. It’s
+like giving R directions on where to find the data you want to work
+with! If you want R to open the file “congressdata.csv”, you have to
+tell it to do something like this:</p>
+<p>College → Fall 2023 classes → POLI 281 → congressdata.csv.</p>
+<p>There is a standard way to list this information: it’s called a file
+path. File paths are slightly different depending on the type of
+computer you have. Let’s look at how the file paths would appear on both
 Windows and macOS:</p>
 <ul>
 <li><p>On Windows, the file path to data.csv would be
-<code>"C:/Users/Guest/Documents/data.csv"</code>.</p></li>
+<code>"C:/Users/YourUsername/College/Fall 2023 classes/POLI 281/congressdata.csv"</code>.</p></li>
 <li><p>On macOS, the file path to data.csv would be
-<code>"/Users/Guest/Documents/data.csv"</code>.</p></li>
+<code>"/Users/YourUsername/College/Fall 2023 classes/POLI 281/congressdata.csv</code>.</p></li>
 </ul>
 </div>
 <div id="section-checking-your-working-directory"
 class="section level3">
 <h3>Checking Your Working Directory</h3>
-<p>Finally, R has what’s called a <em>working directory</em>. The
-working directory is the default location where R looks for files and
-saves outputs if no path is specified. You can check the current working
-directory in R using the <code>getwd()</code> function:</p>
+<p>To get R to open a dataset, you’ll need to give it a filepath like
+the ones above to tell it where to find the dataset. To do this, you’ll
+want to set what’s called a working directory in R. The working
+directory is the default location where R looks for files and saves
+outputs. You can check the current working directory in R using the
+<code>getwd()</code> function:</p>
 <pre class="r"><code>getwd() #check the current working directory</code></pre>
-<p>Okay, before we move on to the next topic, take a moment to create a
-special folder to store all of your materials for this class. Having a
-dedicated POLI 281 folder will help keep your R scripts, data files, and
-any other class-related materials in one place, making them easier to
-manage and locate throughout the course!</p>
+<p>In class we will go over how to set the working directory so that you
+can import datasets. For now, before we move on to the next topic, take
+a moment to create a special folder to store all of your materials for
+this class. Having a dedicated POLI 281 folder will help keep your R
+scripts, data files, and any other class-related materials in one place,
+making them easier to manage and locate throughout the course!</p>
 </div>
 </div>
 <div id="section-topic-2-data-frames" class="section level2">
