@@ -17,7 +17,7 @@ knitr::opts_chunk$set(eval = FALSE)
 
 In this tutorial, we will continue our introduction to R by exploring the topic of vectors. Understanding vectors is essential for many of the tasks you will be performing in R. We will also cover how to perform mathematical operations and other important functions with vectors.
 
-When you are ready, click below to get started!
+When you are ready, click below to get started.
 
 ## Topic 1: Vectors
 
