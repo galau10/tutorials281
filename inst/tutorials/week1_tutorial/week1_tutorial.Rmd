@@ -17,6 +17,8 @@ Welcome to your first week of POLI 281. For this class, we will be working close
 
 You can complete this tutorial without having yet installed R or R Studio on your computer, but do not forget to do this! Having this available on your computer is essential for the rest of the class. 
 
+The lesson begins with an overview of R and RStudio. We'll then learn how to do basic math in R and work with objects, the building blocks of much of what you'll be doing throughout the semester.
+
 ## Topic 1: Introduction to R 
 
 ![](https://www.r-project.org/Rlogo.png)
@@ -263,9 +265,9 @@ my_name <- "YOUR NAME HERE"
 
 ### We can combine objects and arithmetic
 
-If we are using numerical objects we can also execute mathematical operations with these objects. For example, in the blow chunk of code, I am adding together two fictional percentages of party affiliated voters in a state. I create an object called `republicans` which is equal to 45 and an object called `democrats` which is equal to 55. I then add then together. 
+If we are using numerical objects we can also execute mathematical operations with these objects. For example, in the below chunk of code, I am adding together two fictional percentages of party affiliated voters in a state. I create an object called `republicans` which is equal to 45 and an object called `democrats` which is equal to 55. I then add then together. 
 
-```{r, eval = TRUE}
+```{r, repubs_dems, eval = TRUE, exercise = TRUE}
 
 #create initial objects
 republicans <- 45

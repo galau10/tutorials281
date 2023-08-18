@@ -31,7 +31,7 @@ An essential command to create vectors is the `c()` command, which stands for "c
 
 For example, the below chunk of code uses the `c()` command to combine four numbers to create a vector called `first_vector`.
 
-```{r, eval = TRUE}
+```{r, first-vector, eval = TRUE, exercise = TRUE}
 
 first_vector <- c(1, 5, 6, 8) # create the vector
 first_vector # return the vector to see output and ensure it worked
@@ -41,7 +41,7 @@ first_vector # return the vector to see output and ensure it worked
 
 Note that vectors can also combine non-numerical elements. As we did before, when we are dealing with characters, we have to use `" "` to make sure R knows these are character elements. For example:
 
-```{r, eval = TRUE}
+```{r, first-vector2, eval = TRUE, exercise = TRUE}
 
 second_vector <- c("I", "love", "political", "science") # create the vector
 
@@ -189,7 +189,7 @@ class_diff <- class1 - class2
 Now that we have objects with multiple elements, it can also be useful to name those elements. This can help us keep track of the information a little bit better. For example, let's return to the example of protest. We are tracking the number of protests across three towns/cities in the years 2015 and 2016. But before, we didn't label those cities by name. But, we can do this, using the `names()` function. See below to see how it works
 
 
-```{r, eval = TRUE}
+```{r, protest1, eval = TRUE, exercise = TRUE}
 # first create my vectors
 protest_15 <- c(5, 10, 8)
 protest_16 <- c(2, 7, 3)
@@ -210,7 +210,7 @@ When you now return the object, you will see that each element of the vector wil
 
 Since we have two objects which we are giving the same names, we can also save those names in a separate character vector, and do the following:
 
-```{r, eval = TRUE}
+```{r, protest2, eval = TRUE, exercise = TRUE}
 # first create my vectors
 protest_15 <- c(5, 10, 8)
 protest_16 <- c(2, 7, 3)
