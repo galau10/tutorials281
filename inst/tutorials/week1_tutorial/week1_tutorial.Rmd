@@ -336,9 +336,3 @@ rain_diff
 
 ```
 
-
-## Comprehension Quiz
-
-Follow the link to complete some questions about what you have just learned. 
-
-[Quiz link here](https://unc.az1.qualtrics.com/jfe/form/SV_9zDmAIAGw29Ywqa)
